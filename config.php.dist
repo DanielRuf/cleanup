@@ -1,0 +1,17 @@
+<?php
+
+$connectionParams = array(
+    'dbname' => 'db',
+    'user' => 'root',
+    'password' => '',
+    'host' => 'localhost',
+    'driver' => 'pdo_mysql',
+);
+
+$table = 'users';
+$columns = ['DISTINCT profile_image', 'avatar_image'];
+
+// const PATH_SEP = DIRECTORY_SEPARATOR;
+const PATH_SEP = '/';
+const IMAGES_DIR = '../images';
+

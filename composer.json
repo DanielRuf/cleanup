@@ -1,0 +1,14 @@
+{
+    "name": "danielruf/cleanup",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniel Ruf",
+            "email": "kontakt@daniel-ruf.de"
+        }
+    ],
+    "require": {
+        "doctrine/dbal": "^2.5"
+    }
+}
