@@ -34,8 +34,10 @@ function findAll($path) {
 	$result = array();
 	$iterator = new FilesystemIterator($path, FilesystemIterator::SKIP_DOTS + FilesystemIterator::KEY_AS_FILENAME);
 	foreach ($iterator as $filename => $filepath) {
-		$filename = str_replace('_thumb','', $filename);
-		$result[] = $filename;
+		if($filepath->isFile()){
+			$filename = str_replace('_thumb','', $filename);
+			$result[] = $filename;
+		}
 	}
 	return $result;
 }
