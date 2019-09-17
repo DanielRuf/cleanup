@@ -6,4 +6,4 @@ Run `composer install` to install the dependencies. Then copy the configuration 
 
 Usage
 =====================
-Upload the full directory to your server and run `check.php`, it will list all unused files.
+Upload the full directory to your server, rename / copy `config.php.dist` to `config.php`, adjust the settings and run `check.php`.
